@@ -35,6 +35,8 @@ import {
   systemJSInlineCode,
 } from './snippets'
 
+console.log('hello')
+
 // lazy load babel since it's not used during dev
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 let babel: typeof import('@babel/core') | undefined

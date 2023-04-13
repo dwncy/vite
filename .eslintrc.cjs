@@ -18,6 +18,7 @@ module.exports = defineConfig({
   },
   rules: {
     eqeqeq: ['warn', 'always', { null: 'never' }],
+    'no-console': 'off',
     'no-debugger': ['error'],
     'no-empty': ['warn', { allowEmptyCatch: true }],
     'no-process-exit': 'off',
@@ -118,6 +119,7 @@ module.exports = defineConfig({
     {
       files: 'packages/vite/**/*.*',
       rules: {
+        'no-console': 'off',
         'node/no-restricted-require': [
           'error',
           Object.keys(
@@ -135,7 +137,7 @@ module.exports = defineConfig({
     {
       files: ['packages/vite/src/node/**'],
       rules: {
-        'no-console': ['error'],
+        'no-console': ['off'],
       },
     },
     {

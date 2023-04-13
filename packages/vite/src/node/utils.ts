@@ -36,6 +36,8 @@ import type { ResolvedConfig } from './config'
 import type { ResolvedServerUrls } from './server'
 import type { CommonServerOptions } from '.'
 
+console.log('utils')
+
 /**
  * Inlined to keep `@rollup/pluginutils` in devDependencies
  */
